@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'order.apps.OrderConfig',
+    'user.apps.UserConfig',
     'home.apps.HomeConfig',
     'product.apps.ProductConfig',
     'django.contrib.admin',
@@ -39,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
+    'ckeditor_uploader',
+    'mptt',
 ]
 
 MIDDLEWARE = [
